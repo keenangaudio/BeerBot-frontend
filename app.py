@@ -12,7 +12,6 @@ def sendJsonData(json):
 
 def sendImageData(img_url):
 	image = open(img_url, 'rb')
-	name_img = os.path.basename(img_url)
 	files= {'image': (image) }
 
 	response = requests.post(url+'/detect', files=files)
