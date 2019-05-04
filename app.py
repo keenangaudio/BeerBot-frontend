@@ -13,7 +13,7 @@ def sendJsonData(json):
 def sendImageData(img_url):
 	image = open(img_url, 'rb')
 	name_img = os.path.basename(img_url)
-	files= {'image': (name_img,image,'multipart/form-data',{'Expires': '0'}) }
+	files= {'image': (image) }
 
 	response = requests.post(url+'/detect', files=files)
 
