@@ -26,6 +26,5 @@ if __name__ == '__main__':
 	#sendJsonData(json_data_example)
 
 	# Image example
-	
 	sendImageData('cat.jpg')
 	
